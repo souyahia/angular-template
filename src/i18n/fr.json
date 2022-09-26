@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Accueil",
+      "example": "Exemple"
+    }
+  },
+  "home": {
+    "card": {
+      "title": "Template Angular",
+      "github": "Cette application a été générée en utilisant le template Angular de @souyahia",
+      "keyFeatures": "Voici les différentes fonctionnalités clé implémentées et générées pour vous :",
+      "internationalization": "Fonctionnalités d'internationalisation en utilisant ngx-translate",
+      "bootstrap": "Support de Bootstrap et des icônes en utilisant ng-bootstrap et bootstrap-icons",
+      "content": "Répèrtoire d'Assets contenant des images, polices et styles globaux.",
+      "i18n": "Répèrtoire contenant des fichiers de traduction.",
+      "shared": "Un module partagé contenant des composants, directives et pipes qui sont partagés entre les différents modules de fonctionnalité.",
+      "core": "Un module core contenant des elements comme les composants essentiels à l'app (navbar...), les intercepteurs, les guards..."
+    }
+  },
+  "example": {
+    "card": {
+      "title": "Exemple",
+      "description": "Ceci est une page d'exemple."
+    }
+  }
+}
