@@ -5,6 +5,15 @@ such as [ng-bootstrap](https://ng-bootstrap.github.io/#/home), yarn 3 etc...
 This project does not include any tests because it is just a small template, but everything is ready and already
 in place if you need to set up tests.
 
+This template actually comes in 3 different versions, each in its own branch :
+
+| Template | Branch                                                                                 | Description                                                                              |
+|----------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| Default  | [master](https://github.com/souyahia/angular-template)                                 | Default template, with a navbar, language switch and an example page                     |
+| Blank    | [template/blank](https://github.com/souyahia/angular-template/tree/template/blank)     | Blank app with just a Hello World component, but with all the file structure implemented |
+| Minimal  | [template/minimal](https://github.com/souyahia/angular-template/tree/template/minimal) | Minimal app with only the required files                                                 |
+
+
 # Customization
 ## App name, prefixes, etc...
 In order to customize the app name and the prefix of the components etc you need to do the following :
