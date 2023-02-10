@@ -4,9 +4,9 @@ import { OnDestroyComponent } from 'app/core/components/on-destroy.component';
 import { Observable, takeUntil } from 'rxjs';
 
 interface AvailableLanguage {
-  key: string,
-  flag: string,
-  name: string,
+  key: string;
+  flag: string;
+  name: string;
 }
 
 @Component({
@@ -28,7 +28,7 @@ export class LanguageSwitchComponent extends OnDestroyComponent implements OnIni
   ngOnInit(): void {
     this.translateService.onLangChange
       .pipe(takeUntil(this.destroy$))
-      .subscribe((event) => this.selectedLanguage = event.lang);
+      .subscribe((event) => (this.selectedLanguage = event.lang));
   }
 
   public isLanguageSelected(lang: AvailableLanguage): boolean {
@@ -36,7 +36,10 @@ export class LanguageSwitchComponent extends OnDestroyComponent implements OnIni
   }
 
   public getSelectedLanguage(): AvailableLanguage {
-    return this.availableLanguages.find((lang) => this.isLanguageSelected(lang)) ?? this.availableLanguages[0];
+    return (
+      this.availableLanguages.find((lang) => this.isLanguageSelected(lang)) ??
+      this.availableLanguages[0]
+    );
   }
 
   public selectLanguage(lang: AvailableLanguage): Observable<any> {

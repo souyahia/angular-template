@@ -17,10 +17,12 @@
       "extends": [
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates",
-        "airbnb-typescript/base"
+        "airbnb-typescript/base",
+        "plugin:prettier/recommended"
       ],
-      "plugins": ["import"],
+      "plugins": ["import", "prettier"],
       "rules": {
+        "prettier/prettier": "error",
         "@angular-eslint/directive-selector": [
           "error",
           {

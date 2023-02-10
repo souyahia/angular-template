@@ -9,4 +9,4 @@ import { PipesModule } from './pipes/pipes.module';
   imports: [SharedLibsModule, ComponentsModule, DirectivesModule, PipesModule],
   exports: [SharedLibsModule, ComponentsModule, DirectivesModule, PipesModule],
 })
-export class SharedModule { }
+export class SharedModule {}

@@ -5,12 +5,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
-  exports: [
-    CommonModule,
-    FormsModule,
-    NgbModule,
-    ReactiveFormsModule,
-    TranslateModule,
-  ],
+  exports: [CommonModule, FormsModule, NgbModule, ReactiveFormsModule, TranslateModule],
 })
 export class SharedLibsModule {}

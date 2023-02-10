@@ -5,8 +5,8 @@ import { OnDestroyComponent } from 'app/core/components/on-destroy.component';
 import { filter, map, takeUntil } from 'rxjs';
 
 interface NavItem {
-  title: string,
-  url: string,
+  title: string;
+  url: string;
 }
 
 @Component({
@@ -28,11 +28,13 @@ export class NavbarComponent extends OnDestroyComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.router.events.pipe(
-      takeUntil(this.destroy$),
-      filter((event) => event instanceof NavigationEnd),
-      map((event) => event as NavigationEnd),
-    ).subscribe((event) => this.updatedSelectedNavItem(event.url));
+    this.router.events
+      .pipe(
+        takeUntil(this.destroy$),
+        filter((event) => event instanceof NavigationEnd),
+        map((event) => event as NavigationEnd),
+      )
+      .subscribe((event) => this.updatedSelectedNavItem(event.url));
   }
 
   private updatedSelectedNavItem(url: string): void {
