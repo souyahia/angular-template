@@ -18,7 +18,7 @@ This template actually comes in 3 different versions, each in its own branch :
 ## App name, prefixes, etc...
 In order to customize the app name and the prefix of the components etc you need to do the following :
 
-- Change the default prefixes (`my-app`) in the `.eslintrc.json` (line 28 & 36)
+- Change the default prefixes (`my-app`) in the `.eslintrc.json` (line 30 & 38)
 - Change the default project name (`my-app`) in the `angular.json` (line 6)
 - Change the default prefix (`my-app`) in the `angular.json` (line 15)
 - Change the default output path (`dist/my-app`) in the `angular.json` (line 20)
